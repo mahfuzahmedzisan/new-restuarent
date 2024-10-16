@@ -19,13 +19,13 @@
 }
 
 .tittle {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 50px 0 0 0;
 }
 
 .tittle h2 {
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
@@ -76,14 +76,14 @@ header .nav-link:hover{
 header .nav-link.active{
     color: var(--secondary-color) !important;
 }
-.navbar-light .navbar-toggler-icon{
+.navbar-toggler-icon{
     background-image: none;
     position: relative;
 }
-.navbar-light .navbar-toggler {
+.navbar-toggler {
 	border-color: var(--text-secondary-color);
 }
-.navbar-light .navbar-toggler-icon::after{
+.navbar-toggler-icon::after{
     content: "\f0c9";
     font-family: fontawesome;
     position: absolute;
@@ -96,6 +96,7 @@ header .nav-link.active{
     cursor: pointer;
 }
 
+
 /* --------------------------banner--------------------- */
 .banner-section {
     position: relative;
@@ -105,10 +106,10 @@ header .nav-link.active{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 }
 
-.banner-section .banner_image img {
+.banner-section .image img {
     min-height: 250px;
     object-fit: cover;
 }
@@ -117,6 +118,15 @@ header .nav-link.active{
     color: var(--secondary-color);
 }
 .banner-section .content p {
+    color: var(--text-secondary-color);
+}
+.banner-section .content p.banner {
+    color: var(--secondary-color);
+}
+.banner-section .content p.banner {
+    color: var(--secondary-color);
+}
+.banner-section .content p.banner a{
     color: var(--text-secondary-color);
 }
 
@@ -173,7 +183,7 @@ header .nav-link.active{
 }
 
 .feedback-section img {
-    border-radius: 100%;
+    border-radius: 10px;
 }
 
 .feedback-section i {
@@ -222,8 +232,7 @@ header .nav-link.active{
 }
 
 .staff-section {
-    padding: 70px 0;
-
+    padding: 10px 0 70px;
 }
 
 .staff-section .content {
@@ -254,7 +263,7 @@ header .nav-link.active{
 .staff-section .content i {
     transition: 0.4s;
     color: #fff;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .staff-section .icon {
@@ -303,25 +312,7 @@ border-radius: 10px;
 
 /* ================= Contact Page =================== */
 
-.subscribe-seciton{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/banner.jpg") no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 50px 0;
-}
-.subscribe-seciton form{
-    width: 90%;
-}
 
-.subscribe-seciton a{
-    background-color: var(--primary-color);
-}
-@media (min-width: 576px) {
-    .subscribe-seciton form{
-        width: 60%;
-    }
-}
 /* Contact Section  */
 
 .contact-section textarea{
