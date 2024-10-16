@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #002147;
+    --secondary-color: #fdc800;
+    
+    --bg-primary-color: #fff;
+    --bg-secondary-color: #fdfdfd;
+
+    --text-primary-color: #444;
+    --text-secondary-color: #fff;
+
+    --primary-shadow:  0 1px 5px rgba(0, 0, 0, 0.102);
+    --secondary-shadow:  0 15px 30px rgba(0, 0, 0, 0.137);
+}
+
+.tittle {
+    margin-bottom: 20px;
+    padding: 50px 0 0 0;
+}
+
+.tittle h2 {
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    display: inline-block;
+
+}
+
+
+
+
+/* Header Section  */
+
+header nav{
+    background-color: var(--primary-color) !important;
+    color: var(--text-secondary-color) !important;
+}
+header .navbar-brand{
+    color: var(--text-secondary-color) !important;
+    font-weight: 700;
+    font-size: 24px;
+}
+header .nav-link{
+    color: var(--text-secondary-color) !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+header .navbar-brand:hover{
+    color: var(--secondary-color) !important;
+}
+header .nav-link:hover{
+    color: var(--secondary-color) !important;
+}
+header .nav-link.active{
+    color: var(--secondary-color) !important;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+    position: relative;
+}
+.navbar-light .navbar-toggler {
+	border-color: var(--text-secondary-color);
+}
+.navbar-light .navbar-toggler-icon::after{
+    content: "\f0c9";
+    font-family: fontawesome;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--text-secondary-color);
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* --------------------------banner--------------------- */
+.banner-section {
+    position: relative;
+}
+
+.banner-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-section .banner_image img {
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.banner-section .content h4 {
+    color: var(--secondary-color);
+}
+.banner-section .content p {
+    color: var(--text-secondary-color);
+}
+
+/* --------------------------Food items--------------------- */
+
+.food-section .food-item{
+    background-color: var(--bg-secondary-color);
+    box-shadow: var(--primary-shadow);
+}
+.food-section .food-item:hover{
+    box-shadow: var(--secondary-shadow);
+}
+
+.food-section .image img {
+    transition: 0.4s;
+}
+
+.food-section .image {
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.food-section .food-item:hover .image img {
+    transform: scale(1.1);
+}
+
+.food-section .food-item .btn {
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
+}
+
+/* --------------------------Gallery--------------------- */
+.gallery-section .image img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+
+.gallery-section .image:hover img {
+    transform: scale(1.1);
+}
+
+/* --------------------------feedback--------------------- */
+.feedback-section .card-body a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.feedback-section .card {
+    border: none !important;
+}
+
+.feedback-section img {
+    border-radius: 100%;
+}
+
+.feedback-section i {
+    color: sandybrown;
+}
+
+/* --------------------------footer--------------------- */
+
+.footer-section{
+    background-color: var(--primary-color);
+}
+.footer-section a{
+    color: var(--bg-primary-color);
+    text-transform: capitalize;
+}
+.footer-section a:hover{
+    color: var(--secondary-color);
+}
+.footer-section form input{
+    color: var(--text-primary-color);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: .4rem;
+    display: block;
+    border: none;
+    padding: .5rem;
+}
+.footer-section form input[type=submit]{
+    width: fit-content;
+    background-color: var(--secondary-color);
+    padding: .3rem .5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* ------------------------------------------------------home psge end--------------------------------------------- */
+/* -------------------------------------------------------About page start----------------------------------------- */
+
+
+/* ----about staff section- */
+.staff-section .staff-item {
+    position: relative;
+}
+
+.staff-section {
+    padding: 70px 0;
+
+}
+
+.staff-section .content {
+    background-color: #0e020281;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s;
+    color: #fff;
+
+
+}
+
+.staff-section .image {
+    overflow: hidden;
+}
+
+.staff-section .image img {
+    transition: 0.4s;
+}
+
+.staff-section .staff-item:hover .image img {
+    transform: scale(1.1);
+}
+
+.staff-section .content i {
+    transition: 0.4s;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.staff-section .icon {
+    transition: all 0.4s;
+
+}
+
+.staff-section .staff-item .icon {
+    /* display: none; */
+    transition: 0.4s;
+}
+
+.staff-section .staff-item .icon ul a {
+    transition: 0.4s;
+}
+
+.staff-section .staff-item:hover .content {
+    opacity: 1;
+}
+
+.staff-section .content i:hover {
+    color: rgb(245, 189, 179);
+}
+
+/* ----------------------------about company section-------- */
+
+.about-section .company_text {
+    text-align: justify;
+    margin-right: 30px;
+}
+
+.about-section .row img {
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.about-section img:hover {
+    transform: scale(1.1);
+}
+
+.about-section .row .company_image {
+border-radius: 10px;
+}
+
+
+
+/* ================= Contact Page =================== */
+
+.subscribe-seciton{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/banner.jpg") no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 0;
+}
+.subscribe-seciton form{
+    width: 90%;
+}
+
+.subscribe-seciton a{
+    background-color: var(--primary-color);
+}
+@media (min-width: 576px) {
+    .subscribe-seciton form{
+        width: 60%;
+    }
+}
+/* Contact Section  */
+
+.contact-section textarea{
+    min-height: 150px;
+}
+.contact-section .btn{
+    background-color: var(--btn-primary-color);
+}
+.contact-section .content p{
+    max-width: 250px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.contact-section .content a{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-tertiary-color);
+    display: inline-block;
+}
+
+/* =========================== FAQ Page  ===================== */
+
+
+.faq-section{
+    padding: 50px 0;
+}
